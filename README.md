@@ -228,4 +228,4 @@ $newCampaign = $client->campaignsAdd([
 [https://dashamail.ru/api/](https://dashamail.ru/api/)
 
 ## Лицензия
-MIT
+- [MIT License](LICENSE)
