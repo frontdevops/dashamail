@@ -3,9 +3,8 @@
 namespace DashaMail
 {
   use RuntimeException;
-  use JsonException;
   use Throwable;
-  
+
   final class Exception extends RuntimeException
   {
       public function __construct(
@@ -13,7 +12,8 @@ namespace DashaMail
           public ?array $response = null,
           int $code = 0,
           ?Throwable $previous = null,
-      ) {
+      )
+      {
           parent::__construct($message, $code, $previous);
       }
   }
