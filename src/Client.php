@@ -2,6 +2,9 @@
 
 namespace DashaMail
 {
+  use JsonException;
+  use DashaMail\Exception;
+
   final class Client
   {
       private const string BASE_URL = 'https://api.dashamail.ru/';
@@ -13,17 +16,17 @@ namespace DashaMail
       ) {}
   
       /**
-       * Универсальный вызов методов API через $client->listGet([...])
-       * camelCase автоматически преобразуется в формат Dashamail (list.get, message.send, ...)
+       * Универсальный вызов методов API через camelCase: $client->listGet([...])
+       * Преобразует camelCase в dashamail-style (list.get, message.send, ...)
        *
-       * @param string $name camelCase-имя метода (например, listGet, messageSend)
+       * @param string $name    Имя метода в camelCase (например, listGet, messageSend)
        * @param array<mixed> $arguments Параметры метода (один массив)
        * @return array|null
        * @throws Exception
        */
       public function __call(string $name, array $arguments): array|null
       {
-          // camelCase => dashamail-style (list.get, message.send, ...)
+          // camelCase => dashamail-style: listGet → list.get
           $method = strtolower(preg_replace('/([a-z])([A-Z])/', '$1.$2', $name));
   
           $params = $arguments[0] ?? [];
