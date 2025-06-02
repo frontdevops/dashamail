@@ -1,7 +1,5 @@
 # DashaMail PHP Client
 
-# DashaMail PHP Client
-
 Современная PHP-библиотека для интеграции с [DashaMail API](https://dashamail.ru/api/).
 
 - Универсальный вызов методов API через camelCase-методы
