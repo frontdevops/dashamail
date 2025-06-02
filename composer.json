@@ -12,7 +12,7 @@
         "php": ">=8.3"
     },
     "homepage": "https://github.com/geekjob/dashamail-client",
-    "repository": "https://github.com/geekjob/dashamail-lient",
+    "repository": "https://github.com/geekjob/dashamail-client",
     "keywords": [
         "dashamail",
         "email",
