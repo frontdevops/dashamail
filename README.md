@@ -8,7 +8,7 @@
 ## Установка
 
 ```bash
-composer require your-vendor/dasha-mail-php-client
+composer require geekjob/dasha-mail-client
 ```
 
 или вручную добавить файлы и зарегистрировать namespace через psr-4.
