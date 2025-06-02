@@ -4,7 +4,8 @@ namespace DashaMail
 {
   use JsonException;
   use DashaMail\Exception;
-
+  use DashaMail\Format;
+  
   final class Client
   {
       private const string BASE_URL = 'https://api.dashamail.ru/';
