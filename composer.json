@@ -1,0 +1,31 @@
+{
+    "name": "geekjob/dashamail-client",
+    "description": "Современный PHP 8.3+ клиент для API DashaMail (https://dashamail.ru/api/)",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "DashaMail\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.3"
+    },
+    "homepage": "https://github.com/geekjob/dashamail-client",
+    "repository": "https://github.com/geekjob/dashamail-lient",
+    "keywords": [
+        "dashamail",
+        "email",
+        "api",
+        "php",
+        "client"
+    ],
+    "authors": [
+        {
+            "name": "Alexander Majorov",
+            "email": "alexander.majorov@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
