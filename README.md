@@ -1,14 +1,17 @@
 # DashaMail PHP Client
 
-Современный PHP 8.3+ клиент для работы с API [DashaMail](https://dashamail.ru/api/).
+# DashaMail PHP Client
 
-- Универсальный вызов любых методов API через camelCase-методы
-- Без зависимостей, строгое типизирование, простота интеграции
-- Актуально для любых версий API DashaMail — методы не требуют ручного описания
+Современная PHP-библиотека для интеграции с [DashaMail API](https://dashamail.ru/api/).
+
+- Универсальный вызов методов API через camelCase-методы
+- Актуальные параметры для всех методов API
+- Строгая типизация, простая интеграция, без внешних зависимостей
+
 
 ## Установка
 ```bash
-composer ...
+composer require geekjob/dasha-mail-client
 ```
 
 ## Быстрый старт
